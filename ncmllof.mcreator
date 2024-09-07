@@ -1,0 +1,72 @@
+{
+  "mod_elements": [
+    {
+      "name": "Noostilemob",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_ostile_schelton",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ncmllof/procedures/NoostilemobProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BASI_MOD"
+    },
+    {
+      "name": "NCMLZSA",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ncmlzsa_creative_schedule",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/BASI_MOD"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item_group.ncmllof.ncmlzsa_creative_schedule": "NCMLZSA"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "BASI_MOD",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "ncmllof",
+    "modName": "NCML-L.O.F",
+    "version": "1.0.0",
+    "author": "calle, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.ncmllof"
+  },
+  "mcreatorVersion": 202400232117
+}
