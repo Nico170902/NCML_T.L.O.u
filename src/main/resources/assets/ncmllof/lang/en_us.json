@@ -1,3 +1,5 @@
 {
-  "item_group.ncmllof.ncmlzsa_creative_schedule": "NCMLZSA"
+  "item_group.ncmllof.ncmlzsa_creative_schedule": "NCMLZSA",
+  "entity.ncmllof.runnet": "Runnet",
+  "item.ncmllof.runnet_spawn_egg": "Runnet Spawn Egg"
 }

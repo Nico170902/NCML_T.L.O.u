@@ -17,6 +17,10 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.ncmllof.init.NcmllofModTabs;
+import net.mcreator.ncmllof.init.NcmllofModItems;
+import net.mcreator.ncmllof.init.NcmllofModEntities;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -36,6 +40,11 @@ public class NcmllofMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		NcmllofModItems.REGISTRY.register(bus);
+		NcmllofModEntities.REGISTRY.register(bus);
+
+		NcmllofModTabs.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

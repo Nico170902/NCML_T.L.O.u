@@ -33,6 +33,23 @@
         "files": []
       },
       "path": "~/BASI_MOD"
+    },
+    {
+      "name": "Runnet",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "runnet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ncmllof/models/item/runnet_spawn_egg.json",
+          "src/main/java/net/mcreator/ncmllof/client/renderer/RunnetRenderer.java",
+          "src/main/resources/data/ncmllof/forge/biome_modifier/runnet_biome_modifier.json",
+          "src/main/java/net/mcreator/ncmllof/entity/RunnetEntity.java",
+          "src/main/java/net/mcreator/ncmllof/entity/model/RunnetModel.java"
+        ]
+      },
+      "path": "~/POTENZIAMENTO ZOMBIE"
     }
   ],
   "variable_elements": [],
@@ -41,7 +58,9 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item_group.ncmllof.ncmlzsa_creative_schedule": "NCMLZSA"
+      "item_group.ncmllof.ncmlzsa_creative_schedule": "NCMLZSA",
+      "entity.ncmllof.runnet": "Runnet",
+      "item.ncmllof.runnet_spawn_egg": "Runnet Spawn Egg"
     }
   },
   "foldersRoot": {
@@ -68,8 +87,11 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
     "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.ncmllof"
   },
   "mcreatorVersion": 202400232117

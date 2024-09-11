@@ -1,0 +1,59 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "testa",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-3, 24, -4], "size": [8, 8, 8], "pivot": [0.27667, 17.9509, 0.01531], "rotation": [0, -90, 0], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "braccia",
+					"pivot": [6, 22, 1],
+					"cubes": [
+						{"origin": [-1.17982, 11.43929, -7.73162], "size": [4, 12, 4], "pivot": [-0.02295, 17.9509, 0.28369], "rotation": [0, -90, 0], "uv": [32, 0]}
+					]
+				},
+				{
+					"name": "corpo",
+					"pivot": [0, 13, 0],
+					"cubes": [
+						{"origin": [-1, 12, -4], "size": [4, 12, 8], "pivot": [0.27667, 17.9509, 0.01531], "rotation": [0, -90, 0], "uv": [0, 16]}
+					]
+				},
+				{
+					"name": "gambe",
+					"pivot": [-2, 10, 1],
+					"cubes": [
+						{"origin": [-0.72333, -0.0491, 0.01531], "size": [4, 12, 4], "pivot": [0.27667, 17.9509, 0.01531], "rotation": [0, -90, 0], "uv": [0, 36]}
+					]
+				},
+				{
+					"name": "gambe2",
+					"pivot": [3, 10, 1],
+					"cubes": [
+						{"origin": [-0.91947, 0.03805, -4.10473], "size": [4, 12, 4], "pivot": [0.27667, 17.9509, 0.01531], "rotation": [0, -90, 0], "uv": [20, 32]}
+					]
+				},
+				{
+					"name": "braccia2",
+					"pivot": [-6, 21, 0],
+					"cubes": [
+						{"origin": [-0.66375, 11.80048, 3.91165], "size": [4, 12, 4], "pivot": [0.27667, 17.9509, 0.01531], "rotation": [0, -90, 0], "uv": [24, 16]}
+					]
+				}
+			]
+		}
+	]
+}

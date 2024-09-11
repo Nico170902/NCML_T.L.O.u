@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "ncmllof:runnet",
+    "weight": 20,
+    "minCount": 2,
+    "maxCount": 8
+  }
+}

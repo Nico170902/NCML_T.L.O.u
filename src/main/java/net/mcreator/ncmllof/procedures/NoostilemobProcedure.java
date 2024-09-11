@@ -12,10 +12,9 @@ import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.TagKey;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
@@ -37,19 +36,21 @@ public class NoostilemobProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("minecraft:skeletons"))) || entity instanceof LivingEntity _livEnt1 && _livEnt1.getMobType() == MobType.ARTHROPOD || entity instanceof Creeper
-				|| entity instanceof Witch || entity instanceof EnderMan) {
-			{
-				Entity _ent = entity;
-				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
-							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "summon zombie");
-				}
-			}
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.getMobType() == MobType.UNDEAD || entity instanceof LivingEntity _livEnt1 && _livEnt1.getMobType() == MobType.ARTHROPOD || entity instanceof Creeper || entity instanceof Witch
+				|| entity instanceof EnderMan) {
 			NcmllofMod.queueServerWork(2, () -> {
 				if (!entity.level().isClientSide())
 					entity.discard();
 			});
+			if (Mth.nextInt(RandomSource.create(), 1, 3) == 3) {
+				{
+					Entity _ent = entity;
+					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+								_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), "summon ncmllof:runnet");
+					}
+				}
+			}
 		}
 	}
 }
